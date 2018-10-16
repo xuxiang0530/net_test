@@ -14,6 +14,22 @@ namespace NetTest
 {
     public partial class BackgroundWorker : Form
     {
+        /*BackgroundWorker使用小结
+         * 1.WorkerReportsProgress      属性使控件可以发出运行报告,影响主线程
+         * 2.WorkerSupportsCancellation 属性使该线程可以被主动终止
+         * 3.控件使用3个事件进行新线程控制
+         * DoWork
+         * ProgressChanged              事件运行中
+         * RunWorkerCompleted           事件结束时自动触发
+         * 
+         * 方法
+         * RunWorkerAsync(object)       使DoWork事件被触发,调用事件方法
+         * ReportProgress(int)          事件报告,触发ProgressChanged
+         * 
+         * 
+         * 
+         */
+
         static string strSaveDir = @"D:\project\Net_test\temp";
 
         public BackgroundWorker()

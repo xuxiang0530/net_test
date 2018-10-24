@@ -66,12 +66,49 @@ namespace NetTest
             }
 
             //测试匿名类型,隐式类型
-            var vTest = new XuxTest1(22, "33");
+            var vTest = new XuxTest2("33");
 
-            vTest.test();
-
-
-            
+            vTest.test();            
         }
+
+        private class User
+        {
+            public string Name { get; set; }
+            public string Password { get; set; }
+            public int Age { get; set; }
+            public string DeptId { get; set; }
+        }
+
+        private class Dept
+        {
+            public string DeptName { get; set; }
+
+            public int PepNum { get; set; }
+            public string DeptId { get; set; }
+        }
+
+        public void TestFunc()
+        {
+            List<User> listUser = new List<User>()
+            {
+                new User() { Name = "张三", Password = "1234", Age = 12, DeptId = "0001" },
+                new User() { Name = "张四", Password = "1234", Age = 16, DeptId = "0002" },
+                new User() { Name = "张五", Password = "1234", Age = 29, DeptId = "0003" },
+                new User() { Name = "张六", Password = "1234", Age = 18, DeptId = "0001" },
+                new User() { Name = "张七", Password = "1234", Age = 12, DeptId = "0001" }
+            };
+            
+            List<Dept> listDept = new List<Dept>()
+            {
+                new Dept() { DeptId = "0001", DeptName = "人事部", PepNum = 10 },
+                new Dept() { DeptId = "0002", DeptName = "财务部", PepNum = 7 },
+                new Dept() { DeptId = "0003", DeptName = "行政部", PepNum = 15 }
+            };
+
+            listDept.Select(x => { var y = new { x.DeptId, x.DeptName }; return y; });
+            listDept.Where(x => x.PepNum > 10).Select(x => x.DeptId);
+            //IE
+        }
+
     }
 }

@@ -52,6 +52,7 @@
     <Compile Include="BackgroundWorker.Designer.cs">
       <DependentUpon>BackgroundWorker.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConvertExtension.cs" />
     <Compile Include="delegateTest.cs">
       <SubType>Form</SubType>
     </Compile>

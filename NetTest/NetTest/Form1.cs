@@ -28,5 +28,11 @@ namespace NetTest
             BackgroundWorker bw = new BackgroundWorker();
             bw.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ThreadForm tf = new ThreadForm();
+            tf.ShowDialog();
+        }
     }
 }

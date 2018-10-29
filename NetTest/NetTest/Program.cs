@@ -14,9 +14,16 @@ namespace NetTest
         [STAThread]
         static void Main()
         {
+            #region 原始方法
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            #endregion
+
+            #region 线程测试
+
+
+            #endregion
         }
     }
 }

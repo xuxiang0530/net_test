@@ -97,13 +97,16 @@ namespace NetTest
         {
             return str.Length;
         }
+      
 
-        private void button4_Click(object sender, EventArgs e)
+    private void button4_Click(object sender, EventArgs e)
         {
             //string str = "aseds";
-            Func<string,int> xuxFunc =  p => p.Length;
+            Func<string, int> xuxFunc = p => { Thread.Sleep(2000); return p.Length; };
 
-            IAsyncResult ias = xuxFunc.BeginInvoke("asas", p => Console.WriteLine(p.AsyncState), $"这是后面");
+            Console.WriteLine($"func.Invoke()={xuxFunc.Invoke("aaaaaaaaaaaa")}");
+
+            IAsyncResult ias = xuxFunc.BeginInvoke("aaaaaaaaaaaa", p => Console.WriteLine(p.AsyncState), "异步调用返回值");
 
             Console.WriteLine($"func.EndInvoke(asyncResult)={xuxFunc.EndInvoke(ias)}");
         }

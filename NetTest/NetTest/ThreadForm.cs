@@ -62,7 +62,7 @@ namespace NetTest
             // 调用委托(同步调用)
             //action.Invoke("btnAsync_Click_1");
             // 异步调用委托
-            IAsyncResult ia = null;
+           // IAsyncResult ia = null;
             AsyncCallback callBack = p =>
             {
                 //Console.WriteLine(object.ReferenceEquals(p,ia));

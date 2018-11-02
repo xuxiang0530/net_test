@@ -82,8 +82,9 @@ namespace NetTest
                         }
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
+                    
                     continue;
                 }
                 finally

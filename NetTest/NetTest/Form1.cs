@@ -34,5 +34,11 @@ namespace NetTest
             ThreadForm tf = new ThreadForm();
             tf.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmMain fm = new FrmMain();
+            fm.ShowDialog();
+        }
     }
 }

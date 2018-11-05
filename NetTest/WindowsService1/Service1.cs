@@ -7,7 +7,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
-
+//using WcfServiceLibrary1;
 namespace WindowsService1
 {
     public partial class xuxTest : ServiceBase
@@ -19,6 +19,7 @@ namespace WindowsService1
 
         protected override void OnStart(string[] args)
         {
+            //using ()
         }
 
         protected override void OnStop()

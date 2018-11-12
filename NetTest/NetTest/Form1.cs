@@ -40,5 +40,11 @@ namespace NetTest
             FrmMain fm = new FrmMain();
             fm.ShowDialog();
         }
+
+        ServiceReference1.XuxTestClient client = new ServiceReference1.XuxTestClient();
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = client.Add(Convert.ToDouble(textBox1.Text), Convert.ToDouble(textBox2.Text)).ToString();
+        }
     }
 }

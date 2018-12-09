@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XuxTestWcfService", "XuxTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XuxTestWcfWindowsService", "XuxTestWcfWindowsService\XuxTestWcfWindowsService.csproj", "{4859BD43-AAD8-4F69-822A-22851E35A028}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpfDemo", "wpfDemo\wpfDemo.csproj", "{FCCAB32C-3FDB-40BF-AD3D-89081AFC674B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUserControl", "WpfUserControl\WpfUserControl.csproj", "{58F3D11F-EEB8-4883-B44F-3A54519096B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +52,14 @@ Global
 		{4859BD43-AAD8-4F69-822A-22851E35A028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4859BD43-AAD8-4F69-822A-22851E35A028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4859BD43-AAD8-4F69-822A-22851E35A028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCCAB32C-3FDB-40BF-AD3D-89081AFC674B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCCAB32C-3FDB-40BF-AD3D-89081AFC674B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCCAB32C-3FDB-40BF-AD3D-89081AFC674B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCCAB32C-3FDB-40BF-AD3D-89081AFC674B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F3D11F-EEB8-4883-B44F-3A54519096B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F3D11F-EEB8-4883-B44F-3A54519096B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F3D11F-EEB8-4883-B44F-3A54519096B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F3D11F-EEB8-4883-B44F-3A54519096B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

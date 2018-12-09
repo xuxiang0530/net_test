@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="XuxTestControl.UserControTest"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:XuxTestControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <TextBlock x:Name="UserNametextBlock" HorizontalAlignment="Left" Margin="19,0,0,274" TextWrapping="Wrap" Height="16" VerticalAlignment="Top"><Run Text="用户名"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="UserNametextBox" HorizontalAlignment="Left" Height="23" Margin="19,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="PassWordtextBlock" HorizontalAlignment="Left" Margin="19,52,0,0" TextWrapping="Wrap" Text="密码" Height="16" VerticalAlignment="Top"/>
+        <TextBox x:Name="PassWordtextBox" HorizontalAlignment="Left" Height="23" Margin="19,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</UserControl>

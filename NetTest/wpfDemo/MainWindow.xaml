@@ -1,0 +1,46 @@
+﻿<!--wpf应用程序界面和XAML设计文件-->
+<Window x:Class="wpfDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:u2="clr-namespace:XuxTestControl;assembly=WpfUserControl"
+        xmlns:u="clr-namespace:wpfDemo"
+        xmlns:local="clr-namespace:wpfDemo"
+        mc:Ignorable="d"
+        Title="Grid面板" Height="237" Width="525" WindowStartupLocation="CenterScreen">
+    <!--定义网格，此处显示了网格线-->
+    <Grid ShowGridLines="True">
+        <!--定义行,3行-->
+        <Grid.RowDefinitions>
+            <!--自动行高-->
+            <RowDefinition Height="Auto"></RowDefinition>
+            <!--按比例行高-->
+            <RowDefinition Height="*"></RowDefinition>
+            <!--固定行高-->
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--定义列，2列-->
+        <Grid.ColumnDefinitions>
+            <!--按比例列宽-->
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <!--固定列宽-->
+            <ColumnDefinition Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <!--定义元素，并指定单元格-->
+        <TextBlock Grid.Row="0" Grid.Column="0" >第一行第一列</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0" >第二行第一列</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0" >第三行第一列</TextBlock>
+        <Button Grid.Row="0" Grid.Column="1">第一行第二列</Button>
+        <Button Grid.Row="1" Grid.Column="1">第二行第二列</Button>
+        <Button Grid.Row="2" Grid.Column="1">第三行第二列</Button>
+    </Grid>
+    <!--<Grid>
+        --><!--<u:UserControlTest></u:UserControlTest>
+        <Button Height="30" Width="100" Content="点击" Click="Button_Click"></Button>--><!--
+        <StackPanel>
+            <TextBox Name="tbColor"></TextBox>
+            <u:MyDependencyProperty XuxColor="{Binding Path=Text,ElementName=tbColor}"></u:MyDependencyProperty>
+        </StackPanel>
+    </Grid>-->
+</Window>
